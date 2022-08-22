@@ -1,0 +1,46 @@
+.container {
+  margin-top: var(--size-30);
+  margin-left: var(--size-30);
+  margin-right: var(--size-30);
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  margin: 30px 30px;
+}
+
+.brand {
+  margin-right: auto;
+}
+
+.navbar-brand {
+  width: 100%;
+  /* font-weight: 700;
+  width: 100%;
+  transition: ease-in-out 0.3s;
+  color: var(--white); */
+}
+
+.navbar-brand img {
+  height: auto;
+  width: 140px;
+}
+
+.navbar ul li a {
+  padding: 0 var(--size-20);
+  color: var(--font-color-base);
+}
+
+.navbar .blue-features {
+  color: var(--font-color-blue);
+}
+
+.navbar {
+  background-image: url("/assets/abstract/hire-us-transparent-pattern-bg.svg");
+}

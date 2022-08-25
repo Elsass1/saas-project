@@ -56,7 +56,7 @@
   margin-left: var(--size-30);
 }
 
-section.home-page {
+.home-page {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

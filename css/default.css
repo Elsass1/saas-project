@@ -34,8 +34,7 @@ body {
   line-height: 1.6;
   letter-spacing: 0;
   color: var(--font-color-base);
-  margin: 0;
-  padding: 0;
+  margin: auto;
 }
 
 *,
@@ -81,4 +80,10 @@ p {
   transition: ease-in-out 0.3s;
   min-width: fit-content;
   align-items: center;
+}
+
+@media screen and (min-width: 1700px) {
+  body {
+    max-width: 1700px;
+  }
 }

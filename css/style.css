@@ -421,6 +421,10 @@ https://alvarotrigo.com/blog/css-animations-scroll/
   margin-top: 5rem;
 }
 
+.why-front p {
+  margin-bottom: 4.375rem;
+}
+
 .blue-dot {
   color: var(--font-color-blue-circle);
   font-size: 6px;
@@ -451,6 +455,13 @@ https://alvarotrigo.com/blog/css-animations-scroll/
   gap: var(--size-10);
 }
 
+.dot-block p {
+  color: var(--black);
+  font-size: var(--size-16);
+  font-weight: 500;
+  margin-top: var(--size-20);
+}
+
 .line.invisible hr {
   background-color: transparent;
 }
@@ -464,4 +475,38 @@ https://alvarotrigo.com/blog/css-animations-scroll/
   background-color: #e6e9f2;
   height: 2px;
   border: none;
+}
+
+.video-thumbnail {
+  position: relative;
+  margin-top: var(--size-100);
+}
+
+.player-wrapper {
+  width: 40px;
+  height: 40px;
+  background-color: var(--white);
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: solid 1px transparent;
+  box-shadow: 0px 3px 13px rgb(0 0 0 / 25%);
+}
+
+.video-thumbnail i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

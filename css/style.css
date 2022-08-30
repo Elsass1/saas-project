@@ -389,7 +389,7 @@
   font-weight: 500;
   font-size: 26px;
   line-height: 31px;
-  text-align: left;
+  text-align: center;
 }
 
 .image-wrapper {
@@ -415,4 +415,53 @@ https://alvarotrigo.com/blog/css-animations-scroll/
 .image-wrapper img {
   width: 100%;
   display: block;
+}
+
+.why-front {
+  margin-top: 5rem;
+}
+
+.blue-dot {
+  color: var(--font-color-blue-circle);
+  font-size: 6px;
+  padding: var(--size-16);
+  background-color: #ecf2ff;
+  border-radius: 50%;
+}
+
+.dots-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dot-block {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dot-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-10);
+}
+
+.line.invisible hr {
+  background-color: transparent;
+}
+
+.dot-container .line {
+  width: 90px;
+}
+
+.line hr {
+  width: 90px;
+  background-color: #e6e9f2;
+  height: 2px;
+  border: none;
 }

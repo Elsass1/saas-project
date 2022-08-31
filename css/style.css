@@ -505,8 +505,74 @@ https://alvarotrigo.com/blog/css-animations-scroll/
 
 .video-thumbnail img {
   width: 100%;
-  max-width: 600px;
+  max-width: 900px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hubspot-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: var(--size-100);
+}
+
+.portrait {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  max-width: 500px;
+}
+
+.image-top {
+  grid-row: 2 / span 8;
+  grid-column: 1 /5;
+}
+
+.image-top img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-bottom {
+  grid-row: 1 / span 8;
+  grid-column: 2 / span 8;
+  z-index: 10;
+  margin-bottom: 6.125rem;
+}
+
+.image-bottom img {
+  width: 100%;
+  height: 100%;
+}
+
+.hubspot {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.img-wrapper {
+  align-self: flex-start;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: var(--size-20);
+}
+
+.img-wrapper p {
+  color: var(--black);
+  size: var(--size-20);
+  line-height: 32px;
+}
+
+.img-wrapper h4 {
+  font-size: var(--size-18);
+  color: var(--black);
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 5px;
 }

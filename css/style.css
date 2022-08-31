@@ -517,6 +517,7 @@ https://alvarotrigo.com/blog/css-animations-scroll/
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: var(--size-100);
+  margin-bottom: var(--size-40);
 }
 
 .portrait {
@@ -575,4 +576,27 @@ https://alvarotrigo.com/blog/css-animations-scroll/
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 5px;
+}
+
+section-6 h4 {
+  text-align: center;
+  font-size: var(--size-20);
+}
+
+.clients {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: var(--size-40);
+}
+
+.client {
+  width: 100%;
+  max-width: var(--size-150);
+}
+
+.client img {
+  width: 100%;
+  display: block;
 }

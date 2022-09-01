@@ -617,6 +617,7 @@ https://alvarotrigo.com/blog/css-animations-scroll/
   margin-right: auto;
   max-width: 1090px;
   margin-top: var(--size-50);
+  margin-bottom: 7.5rem;
 }
 
 .components {

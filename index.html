@@ -436,7 +436,7 @@
           </fieldset>
           <fieldset class="form-element">
             <select class="input-1" name="budget" id="">
-              <option value="budget">Budget</option>
+              <option value="none" selected disabled hidden>Budget</option>
               <option value="below 10k">Below $10k</option>
               <option value="between $10k and $50k">
                 Between $10k and $50k
@@ -444,31 +444,34 @@
               <option value="above $50k">Above $50k</option>
             </select>
             <select class="input-1" name="country" id="">
-              <option value="country">Country</option>
+              <option value="none" value="none" selected disabled hidden>Country</option>
               <option value="USA">USA</option>
               <option value="Canada">Canada</option>
               <option value="Australia">Australia</option>
             </select>
           </fieldset>
           <fieldset class="form-element">
-            <input
-              type="text"
+            <!-- <input
+              type="text-arez"
+              rows="5"
+              class="input-2"
               placeholder="Tell us more about your project, needs, and timeline, please..."
-            />
+            /> -->
+            <textarea class="input-2 "  name="" id="" cols="30" rows="7" placeholder="Tell us more about your project, needs, and timeline, please..."></textarea>
           </fieldset>
           <fieldset class="form-element">
-            <input type="checkbox" id="marketing" name="marketing" />
-            <label for="marketing"
+            <input type="checkbox" class="checkbox" id="marketing" name="marketing" />
+            <label for="marketing" class="checkbox-text"
               >Yes, I'd like to receive occasional marketing emails from Front.
               I have the right to opt out at any time.</label
             >
           </fieldset>
-          <fieldset class="form-element">
+          <fieldset class="form-element privacy-policy">
             <a href="#">View privacy policy</a>
             <a href="#">View privacy policy</a>
           </fieldset>
-          <fieldset class="form-element">
-            <button type="submit">Get started</button>
+          <fieldset class="form-element submit-btn">
+            <button type="submit" class="btn">Get started</button>
           </fieldset>
         </form>
       </div>

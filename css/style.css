@@ -724,9 +724,8 @@ https://alvarotrigo.com/blog/css-animations-scroll/
 .hire-us-container {
   display: flex;
   flex-direction: column;
-  margin-left: 4.375rem;
-  margin-top: 9.0625rem;
-  margin-bottom: 9.0625rem;
+  margin-left: 7rem;
+  justify-content: center;
 }
 
 .text-block-2 {
@@ -765,6 +764,7 @@ https://alvarotrigo.com/blog/css-animations-scroll/
   font-size: var(--size-16);
   color: var(--white);
   line-height: 1.5rem;
+  font-style: italic;
 }
 
 .testimonials {
@@ -806,6 +806,7 @@ https://alvarotrigo.com/blog/css-animations-scroll/
   border-radius: var(--size-10);
   margin: var(--size-30);
   max-width: 28.40625rem;
+  max-height: 40.5rem;
 }
 
 .form-container h3 {
@@ -813,10 +814,15 @@ https://alvarotrigo.com/blog/css-animations-scroll/
   margin: 1.875rem 1.96875rem 0.625rem 1.96875rem;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 .form-element {
   display: flex;
   justify-content: space-between;
-  margin: 0 1.96875rem 0.625rem 1.96875rem;
+  margin: 0 1.96875rem 0.925rem 1.96875rem;
   border: none;
   padding: 0;
 }
@@ -824,4 +830,72 @@ https://alvarotrigo.com/blog/css-animations-scroll/
 .input-1 {
   width: 180px;
   height: 40px;
+  border: 1px solid var(--font-color-form);
+  padding-left: 0.9375rem;
+}
+
+.input-2 {
+  width: 100%;
+  border: 1px solid var(--font-color-form);
+  padding: 0.9375rem;
+  font-size: var(--size-14);
+  font-family: "Inter", sans-serif;
+}
+
+::-webkit-input-placeholder {
+  color: var(--font-color-form);
+  font-family: "Inter", sans-serif;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: var(--font-color-form);
+  font-family: "Inter", sans-serif;
+}
+:-ms-input-placeholder {
+  color: var(--font-color-form);
+  font-family: "Inter", sans-serif;
+}
+:-moz-placeholder {
+  color: var(--font-color-form);
+  font-family: "Inter", sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+.checkbox {
+  width: 40px;
+  margin-left: 0;
+  margin-right: var(--size-20);
+}
+
+.checkbox-text {
+  font-size: var(--size-14);
+  color: var(--font-color-form);
+  line-height: 22px;
+}
+
+.privacy-policy {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+}
+
+.privacy-policy a:nth-child(1) {
+  text-decoration: underline dotted;
+  color: var(--font-color-base);
+}
+
+.privacy-policy a:nth-child(2) {
+  text-decoration: underline dotted;
+  color: var(--font-color-blue);
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.3125rem;
+  margin-bottom: var(--size-30);
 }

@@ -561,21 +561,28 @@ https://alvarotrigo.com/blog/css-animations-scroll/
 
 .img-wrapper img {
   width: 100%;
-  height: var(--size-20);
+  height: var(--size-50);
 }
 
-.img-wrapper p {
+.hubspot p {
   color: var(--black);
-  size: var(--size-20);
-  line-height: 32px;
+  font-size: 1.375rem;
+  line-height: 2rem;
+  margin-top: var(--size-30);
 }
 
-.img-wrapper h4 {
+.hubspot h4 {
   font-size: var(--size-18);
   color: var(--black);
   font-weight: 700;
+  margin-top: var(--size-20);
+  margin-bottom: 0;
+}
+
+.hubspot p:nth-child(4) {
   margin-top: 0;
-  margin-bottom: 5px;
+  font-size: var(--size-14);
+  color: var(--font-color-base);
 }
 
 .section-6 h4 {
@@ -898,4 +905,9 @@ textarea {
   align-items: center;
   margin-top: 2.3125rem;
   margin-bottom: var(--size-30);
+}
+
+.upper-footer {
+  display: flex;
+  justify-content: space-between;
 }

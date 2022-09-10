@@ -312,6 +312,7 @@
   padding: var(--size-20);
   flex-basis: 218.5px;
   transition: 0.3s ease-in-out;
+  gap: var(--size-10);
 }
 
 .card:hover {
@@ -330,21 +331,22 @@
 .card h3 {
   color: var(--black);
   font-size: var(--size-16);
-  margin-top: var(--size-20);
-  margin-bottom: var(--size-30);
+  /* margin-top: var(--size-20);
+  margin-bottom: var(--size-30); */
 }
 
 .card p {
   font-size: var(--size-14);
   font-weight: 500;
   line-height: 24px;
+  margin-bottom: var(--size-10);
 }
 
 .card a {
   font-size: var(--size-14);
   color: var(--font-color-blue);
   line-height: 17px;
-  margin-top: var(--size-10);
+  margin-top: 0;
 }
 
 .card .sketch {
@@ -364,7 +366,7 @@
   border: none;
   cursor: pointer;
   margin-left: var(--size-10);
-  margin-bottom: var(--size-10);
+  margin-bottom: 0;
 }
 
 .software-for-people {
@@ -656,13 +658,19 @@ https://alvarotrigo.com/blog/css-animations-scroll/
   font-weight: 500;
 }
 
-.pricing-card {
+.pricing-card.small {
   padding: var(--size-20);
+  gap: var(--size-20);
+  display: flex;
+  flex-direction: column;
+  max-width: 16.4375rem;
 }
 
 .pricing-card h3 {
   font-size: 18px;
   color: var(--black);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .pricing-card p {
@@ -717,9 +725,9 @@ https://alvarotrigo.com/blog/css-animations-scroll/
   align-items: center;
 }
 
-.sketch button {
+/* .sketch button {
   margin-top: var(--size-10);
-}
+} */
 
 .section-8 {
   display: flex;
@@ -1010,7 +1018,48 @@ p:nth-child(4) {
 
 select {
   background-color: var(--font-color-light-background);
+  border: none;
+  height: 2.5rem;
+  padding: 0 var(--size-10);
+  margin-left: var(--size-10);
 }
+
+/* select:after {
+  content: "\f107";
+  font: normal normal normal 17px/1 FontAwesome;
+  color: red;
+  right: 11px;
+  top: 6px;
+  height: 34px;
+  padding: 15px 0px 0px 8px;
+  position: absolute;
+  pointer-events: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: 2.5rem;
+  float: right;
+  margin: 5px 0px;
+  padding: 0px 24px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ecf2ff;
+  background-image: none;
+  -ms-word-break: normal;
+  word-break: normal;
+} */
 
 .lower-wrapper {
   text-align: center;
